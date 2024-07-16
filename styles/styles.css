@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    font-family:cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+    background-image:url("/images/corazon.png");
+    background-repeat: repeat; 
+    background-size: auto; 
+    background-attachment: fixed; 
+    background-position: center;
+    backdrop-filter: blur(3px);
+}
+
+
+h1 {
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.buttons {
+    position: relative;
+    display: inline-block;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#yesBtn {
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    border-style:hidden;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    color: red;
+    font-family:cursive;
+    padding: 10px 20px 10px 20px;
+}
+
+#yesBtn:hover{
+    color: black;
+}
+
+#noBtn {
+    position: relative;
+    background-color: rgb(56, 56, 56);
+    border-style:hidden;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    color: red;
+    font-family:cursive;
+    padding: 10px 23px 10px 23px;
+    
+}
+
+#noBtn:hover{
+    color: black;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); /* Escala inicial (normal) */
+    }
+    50% {
+        transform: scale(1.2); /* Escala al 120% */
+    }
+    100% {
+        transform: scale(1); /* Vuelve a la escala normal */
+    }
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 50px;
+    color: red;
+    animation: scaleAnimation 2s infinite; /* 2 segundos de duración, infinito */
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 50px;
+    color: red;
+}
